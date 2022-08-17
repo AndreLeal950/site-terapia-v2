@@ -32,11 +32,12 @@ const Header = () => {
                 >Entre em Contato</Button>
               </Box>
 
-              <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "5"}
-                  mb={isNotSmallerScreen ? "0" : "14"} mr='20px'
+              <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "4"}
+                  mb={isNotSmallerScreen ? "0" : "14"}
+                  ml={isNotSmallerScreen ? "0" : "8"} mr='20px'
                   borderRadius='full'
-                  bgColor='transparent' boxShadow='lg'
-                  boxSize='250px' src= {require('../img/terapeuta.png')}>
+                  bgColor='transparent' 
+                   w='200px' h='230px' src= {require('../img/terapeuta.png')}>
                   
               </Image>
 

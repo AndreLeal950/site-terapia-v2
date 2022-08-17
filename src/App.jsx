@@ -7,12 +7,16 @@ import {FaSun, FaMoon, FaInstagram, FaWhatsapp} from 'react-icons/fa'
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Social from './components/Social';
+import About from './components/About'
+import Modal from './components/Modal'
+import Sidebar from './components/Sidebar';
 
  
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
+  const { isNotSmallerScreen } = useMediaQuery("(min-width:650px)");
+ 
   
   return (
              
@@ -24,11 +28,11 @@ function App() {
           fontWeight='semibold'
           color='cyan.400'
         >
-          <Image src={isNotSmallerScreen ? require('../src/img/Logo.png') : require('../src/img/flor_lotus.png') } w='20rem' alignItems='center'/>
+          <Image src={isNotSmallerScreen ? require('../src/img/flor_lotus.png') : require('../src/img/Logo.png') } w='20rem' alignItems='center'/>
         </Heading>
 
       
-      <Spacer></Spacer>
+      <Spacer/>
       <IconButton
         ml={8} icon={isDark ? <FaSun /> : <FaMoon />}
         isRound='true' onClick={toggleColorMode} />
@@ -45,6 +49,11 @@ function App() {
       </Flex>
       <Header />
       <Profile />
+      <Social />
+      <Modal />
+      <Sidebar />
+     
+      <br/><br/><br/>
       <Social />
 
     </VStack>

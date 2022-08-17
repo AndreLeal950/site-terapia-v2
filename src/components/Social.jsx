@@ -1,8 +1,8 @@
 import React from 'react'
 import { HStack } from '@chakra-ui/layout'
-import { FaFacebookF, FaGoogle, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { Icon } from '@chakra-ui/react'
-import { BsFillGeoAltFill, BsFillGeoFill } from "react-icons/bs";
+import { BsFillGeoAltFill } from "react-icons/bs";
 
 const Social = () => {
   return (
@@ -22,7 +22,7 @@ const Social = () => {
           <Icon as={BsFillGeoAltFill} boxSize='10' target='blank'
             onClick={() =>
             window.open('https://goo.gl/maps/QsA7eYgz3S4wpezm9')}/>
-
+            <br/><br/><br/>
     </HStack>  
   )
 }
