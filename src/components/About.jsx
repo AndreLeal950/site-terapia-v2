@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack, Flex, Box, Text } from '@chakra-ui/layout'
-import { useMediaQuery, Image } from '@chakra-ui/react';
+import { useMediaQuery } from '@chakra-ui/react';
 
 const About = () => {
     const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");

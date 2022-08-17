@@ -1,8 +1,7 @@
 import React from 'react'
 import { Drawer, DrawerFooter, DrawerHeader,
   DrawerOverlay, DrawerContent, DrawerCloseButton,
-  useDisclosure, Button, Image, Text, Box, List,
-  ListItem, ListIcon, OrderedList, UnorderedList,
+  useDisclosure, Button, Image, Text, Box, ListItem, UnorderedList,
 } from '@chakra-ui/react'
 
 

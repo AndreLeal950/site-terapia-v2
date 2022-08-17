@@ -7,9 +7,9 @@ import {FaSun, FaMoon, FaInstagram, FaWhatsapp} from 'react-icons/fa'
 import Header from './components/Header';
 import Profile from './components/Profile';
 import Social from './components/Social';
-import About from './components/About'
 import Modal from './components/Modal'
 import Sidebar from './components/Sidebar';
+
 
  
 function App() {
@@ -52,8 +52,7 @@ function App() {
       <Social />
       <Modal />
       <Sidebar />
-     
-      <br/><br/><br/>
+      <br/><br/>
       <Social />
 
     </VStack>
