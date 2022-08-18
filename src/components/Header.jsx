@@ -11,7 +11,14 @@ const Header = () => {
     const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
     
   return (
-      <Stack>
+    <Stack>
+             <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "4"}
+                  mb={isNotSmallerScreen ? "0" : "0"}
+                  ml={isNotSmallerScreen ? "0" : "2"} mr='20px'
+                  borderRadius='5%'
+                  bgColor='transparent' 
+                   w='190px' h='260px' src= {require('../img/terapeuta.png')}>
+              </Image>
           <Circle
             position='absolute'
             bg='blue.100'
@@ -24,22 +31,13 @@ const Header = () => {
               
               <Box mt={isNotSmallerScreen ? "0" : "4"} align='flex-start'>
                  <Text fontSize="1.5rem" fontWeight="semibold">Eu sou</Text> 
-                 <Text fontSize="3rem" fontWeight="bold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip="text">Silvana Leal</Text> 
-                 <Text color={isDark ? "gray.200" : "gray.600"}>Psicanalista Clínica - Terapeuta Integrativa e Complementar</Text> 
+                 <Text fontSize="3rem" fontWeight="bold" bgGradient="linear(to-r, teal.300, green.500, yellow.200)" bgClip="text">Silvana Leal</Text> 
+                 <Text color={isDark ? "gray.200" : "gray.600"}>Psicanalista Clínica - Terapeuta Integrativa</Text> 
                 
-                  <Button mt={6} colorScheme='blue' onClick={() =>
-                    window.open('https://api.whatsapp.com/send?phone=5591992851178')}     
-                >Entre em Contato</Button>
+                  <Button mt={4}  ml='4rem'bgGradient="linear(to-r, teal.300, green.500, yellow.200)" onClick={() =>
+                    window.open('https://api.whatsapp.com/send?phone=5591992851178')}>
+                         Entre em Contato</Button>
               </Box>
-
-              <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "4"}
-                  mb={isNotSmallerScreen ? "0" : "14"}
-                  ml={isNotSmallerScreen ? "0" : "8"} mr='20px'
-                  borderRadius='full'
-                  bgColor='transparent' 
-                   w='200px' h='230px' src= {require('../img/terapeuta.png')}>
-                  
-              </Image>
 
           </Flex>
     </Stack>
