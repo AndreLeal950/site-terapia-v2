@@ -43,7 +43,7 @@ function Sidebar() {
               fontSize="1.2rem"
               textAlign='center'
               fontWeight='semibold'
-              w='100%'
+              w='100%' borderRadius={'10px'}
               bgGradient="linear(to-r, teal.300, green.500, yellow.200)"
               >
               Silvana Gregório Leal<br />

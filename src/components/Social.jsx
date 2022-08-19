@@ -7,9 +7,13 @@ import { BsFillGeoAltFill } from "react-icons/bs";
 const Social = () => {
   return (
       <HStack spacing={14}>
-          <Icon as={FaFacebookF} boxSize='10' target='blank'
-            onClick={() =>
-            window.open('https://www.facebook.com/silvana.leal.37')} />
+      <Icon
+        title='facebook'
+        as={FaFacebookF}
+        boxSize='10'
+        target='blank'
+        onClick={() =>
+         window.open('https://www.facebook.com/silvana.leal.37')}>facebook</Icon>
           
           <Icon as={FaInstagram} boxSize='10' target='blank'
             onClick={() =>

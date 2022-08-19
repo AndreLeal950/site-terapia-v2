@@ -38,9 +38,15 @@ const Header = () => {
             bgClip="text" >Silvana Leal</Text> 
                  <Text color={isDark ? "gray.200" : "gray.600"}>Psicanalista Clínica - Terapeuta Integrativa</Text> 
                 
-                  <Button mt={4}  ml='4rem'bgGradient="linear(to-r, teal.300, green.500, yellow.200)" onClick={() =>
+          <Button
+            w='15rem'
+            mt={2} ml='2rem'
+            fontSize={'1.2rem'}
+            bgGradient="linear(to-r, teal.300, green.500, yellow.200)" onClick={() =>
                     window.open('https://api.whatsapp.com/send?phone=5591992851178')}>
-                         Entre em Contato</Button>
+                  Entre em Contato
+                  
+          </Button>
               </Box>
 
           </Flex>

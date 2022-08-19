@@ -13,6 +13,7 @@ import Sidebar from './components/Sidebar';
 import Servico from './components/Servico';
 import Galeria from './components/Galeria';
 import Depoimentos from './components/Depoimento';
+import Contato from './components/Contato';
 
 
  
@@ -58,8 +59,9 @@ function App() {
           window.open('https://api.whatsapp.com/send?phone=5591992851178')} />
       </Flex>
       <Header />
-      <Profile />
       <Social />
+      <Contato />
+      <Profile />
       <Modal />
       <Sidebar />
       <Servico />
