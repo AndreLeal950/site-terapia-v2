@@ -16,20 +16,20 @@ const SocialFooter = () => {
 
   return (
     <>
-      <HStack spacing={14}>
-          <Icon as={FaFacebookF} boxSize='5' target='blank'
+      <HStack spacing={12}>
+          <Icon as={FaFacebookF} boxSize='4' target='blank'
             onClick={() =>
             window.open('https://www.facebook.com/silvana.leal.37')} />
           
-          <Icon as={FaInstagram} boxSize='5' target='blank'
+          <Icon as={FaInstagram} boxSize='4' target='blank'
             onClick={() =>
             window.open('https://www.instagram.com/silvanaleal.terapeuta')}/>
           
-          <Icon as={FaWhatsapp} boxSize='5' target='blank'
+          <Icon as={FaWhatsapp} boxSize='4' target='blank'
             onClick={() =>
             window.open('https://api.whatsapp.com/send?phone=5591992851178')}/>
           
-          <Icon as={BsFillGeoAltFill} boxSize='5' target='blank'
+          <Icon as={BsFillGeoAltFill} boxSize='4' target='blank'
             onClick={() =>
             window.open('https://goo.gl/maps/QsA7eYgz3S4wpezm9')}/>
             <br/><br/>
