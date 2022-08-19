@@ -28,8 +28,8 @@ const Contato = () => {
             <GrMail size={'1.5rem'} /><Text ml='2.5rem' mt='-1.2rem' mb={'0.2rem'} fontSize={'1rem'} fontWeight={'semibold'}>E-mail :</Text>
             <Text ml='0.1rem' mb={'0.2rem'} fontSize={'1rem'} fontWeight={'semibold'}>silvanaleal950.terapeuta@gmail.com</Text>
           <BsFillGeoAltFill mb='1.2rem' size={'1.5rem'}/><Text ml='2.5rem' mt='-1.2rem' fontSize={'1rem'} fontWeight={'semibold'}>Endereço :</Text>
-           <Text ml='1.8rem' fontSize={'1rem'} fontWeight={'semibold'}>Trav.Maurití,639 - Sl: 7 </Text>
-           <Text ml='2rem' fontSize={'1rem'} fontWeight={'semibold'}>Belém - Pará</Text>
+           <Text ml='2.5rem' fontSize={'1rem'} fontWeight={'semibold'}>Trav.Maurití,639 - Sl: 7 </Text>
+           <Text ml='2.5rem' fontSize={'1rem'} fontWeight={'semibold'}>Belém - Pará</Text>
             </Heading>
            </Box>
       </Flex>
