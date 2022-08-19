@@ -37,13 +37,7 @@ function Sidebar() {
           <Avatar size='2xl' name='Dan Abrahmov' src={require('../img/terapeuta3.png')} />
     </WrapItem>
     </Wrap>
-         {/* <Image position='relative' alignSelf='center' 
-           mr='80px'
-           borderRadius='20%'
-           bgColor='transparent' 
-           boxSize='100px' src= {require('../img/terapeuta3.png')}>
-          </Image>  */}
-              </DrawerHeader>
+        </DrawerHeader>
             <Box  m='0.5rem' fontSize="1.2rem" >
             <Text
               fontSize="1.2rem"

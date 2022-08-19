@@ -11,13 +11,16 @@ import SocialFooter from './components/SocialFooter';
 import Modal from './components/Modal'
 import Sidebar from './components/Sidebar';
 import Servico from './components/Servico';
+import Galeria from './components/Galeria';
+import Depoimentos from './components/Depoimento';
 
 
  
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
-  const { isNotSmallerScreen } = useMediaQuery("(min-width:650px)");
+  const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
+  const { isSmallerScreen } = useMediaQuery("(max-width:599px)");
  
   
   return (
@@ -30,7 +33,12 @@ function App() {
           fontWeight='semibold'
           color='cyan.400'
         >
-          <Image src={isNotSmallerScreen ? require('../src/img/flor_lotus.png') : require('../src/img/Logo.png') } w='20rem' alignItems='center'/>
+          {isSmallerScreen || isNotSmallerScreen ?
+          <Image
+            src={require('../src/img/flor_lotus.png')} w='10rem' alignItems='center' /> :
+          <Image
+            src={require('../src/img/Logo.png')} w='23rem' alignItems='flex-start' />
+          }
         </Heading>
 
       
@@ -55,7 +63,9 @@ function App() {
       <Modal />
       <Sidebar />
       <Servico />
-      <br/><br/>
+      <Galeria />
+      <Depoimentos />
+      <br /><br />
       <SocialFooter />
 
     </VStack>

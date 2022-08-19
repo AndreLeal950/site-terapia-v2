@@ -31,7 +31,11 @@ const Header = () => {
               
               <Box mt={isNotSmallerScreen ? "0" : "4"} align='flex-start'>
                  <Text fontSize="1.5rem" fontWeight="semibold">Eu sou</Text> 
-                 <Text fontSize="3rem" fontWeight="bold" bgGradient="linear(to-r, teal.300, green.500, yellow.200)" bgClip="text">Silvana Leal</Text> 
+          <Text
+            fontSize="3rem"
+            fontWeight="bold"
+            bgGradient="linear(to-r, teal.300, green.500, yellow.200)"
+            bgClip="text" >Silvana Leal</Text> 
                  <Text color={isDark ? "gray.200" : "gray.600"}>Psicanalista Clínica - Terapeuta Integrativa</Text> 
                 
                   <Button mt={4}  ml='4rem'bgGradient="linear(to-r, teal.300, green.500, yellow.200)" onClick={() =>

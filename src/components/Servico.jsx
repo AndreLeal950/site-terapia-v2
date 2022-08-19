@@ -1,6 +1,7 @@
 import React from 'react'
-import { Button, useDisclosure, Image } from '@chakra-ui/react'
-import {  UnorderedList, ListItem } from '@chakra-ui/react'
+import { Button, useDisclosure, Image, UnorderedList, ListItem } from '@chakra-ui/react'
+import { useColorMode } from '@chakra-ui/color-mode'
+
 import {
   AlertDialog,
   AlertDialogFooter,
@@ -12,6 +13,8 @@ import {
 
 function Servico() {
   const { isOpen, onOpen, onClose } = useDisclosure()
+   const {colorMode} = useColorMode();
+  const isDark = colorMode === 'dark'
   const cancelRef = React.useRef()
 
   return (
@@ -41,32 +44,32 @@ function Servico() {
               >
               Serviços:
             </AlertDialogHeader>
-            <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+            <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Psicanálise Clínica On-line
             </Text>
-            <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+            <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Clínica Psicanalítica para Adultos
             </Text>
-            <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+            <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Clínica Psicanalítica para Adolescentes
             </Text>
-            <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+            <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Clínica Psicanalítica para Crianças
             </Text>
-            <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+            <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Terapias Integrativas e Complementares:
             </Text>
-            <UnorderedList color="gray.600" paddingLeft={'1.5rem'} mr='-1rem'>
+            <UnorderedList color={isDark ? "gray.200" : "gray.600"} paddingLeft={'1.5rem'} mr='-1rem'>
               <ListItem>Reiki</ListItem>
               <ListItem>Auriculoterapia</ListItem>
               <ListItem>Cromoterapia</ListItem>
               <ListItem>Hipnose Clínica Terapeutica</ListItem>
               <ListItem>Coaching Integrativo Sistêmico Profissional</ListItem>
             </UnorderedList>
-             <Text m='0.3rem' fontWeight='semibold' color="gray.600">
+             <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>
               - Tratamento e Acompanhamento:
             </Text>
-            <UnorderedList color="gray.600" paddingLeft={'1.5rem'} mr='-1rem'>
+            <UnorderedList color={isDark ? "gray.200" : "gray.600"} paddingLeft={'1.5rem'} mr='-1rem'>
               <ListItem>Depressão</ListItem>
               <ListItem>Ansiedade</ListItem>
               <ListItem>Síndrome do Estresse Pós-traumático</ListItem>

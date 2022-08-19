@@ -15,7 +15,7 @@ const Profile = () => {
               <Heading fontWeight='normal' color='green.500'>
           <Text fontSize='1.5rem' color='green.500' fontWeight='bold' >Experiência no tratamento:</Text><br/>
           
-            <UnorderedList fontSize='1.2rem' marginLeft='1rem' >
+            <UnorderedList fontSize='1.2rem' marginLeft='1rem' mt='-1.5rem' >
                   <ListItem>Depressão</ListItem>
                   <ListItem>Ansiedade</ListItem>
                   <ListItem>Síndrome do Estresse Pós-traumático</ListItem>
