@@ -19,7 +19,12 @@ const Servico = () => {
           borderRadius='10'
           px="5" py="30">
               <Heading fontWeight='normal' color='green.500'>
-          <Text fontSize='1.2rem' color='green.500' fontWeight='bold' mt={'-1.5rem'} mb={'-0.5rem'} >Experiência no tratamento:</Text><br/>
+            <Text
+              fontSize='1.2rem'
+              color='green.500'
+              fontWeight='bold'
+              mt={'-1.5rem'}
+              mb={'-0.5rem'} >Experiência no tratamento:</Text><br />
           
             <UnorderedList fontSize='1.1rem' marginLeft='1rem' mt='-1.5rem' >
                   <ListItem>Depressão</ListItem>
