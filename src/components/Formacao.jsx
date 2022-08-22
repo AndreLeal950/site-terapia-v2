@@ -12,8 +12,9 @@ const About = () => {
         spacing="50px" p={isNotSmallerScreen ? "30" : "0"}
         alignSelf="flex-start">
 
-        <Box mt={isNotSmallerScreen ? "0" : "4"} color='gray.900' align='center' w='100%' bg='gray.100' borderRadius='10'  >
+        <Box mt={isNotSmallerScreen ? "0" : "4"} color='gray.900' align='start' w='100%' bg='gray.100' borderRadius='10'  >
           <Text fontSize="1.3rem"
+            ml={'25%'}
             textAlign='center'
             fontWeight='normal' w='50%'
             bgGradient="linear(to-r, teal.300, green.500, yellow.200)"
@@ -27,33 +28,36 @@ const About = () => {
           </Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Pós-Graduada em Psicanálise Clínica e Intervenções Clínicas,
-            pelo Centro Universitário de Tecnologia de Curitiba</Text>
+            pelo Centro Universitário de Tecnologia de Curitiba.</Text>
           <br />
-          <Text fontSize="1.3rem" fontWeight='normal' textAlign='center' w='50%' bgGradient="linear(to-r, teal.300, green.500, yellow.200)" borderRadius='10'>Cursos :</Text>
+          <Text fontSize="1.3rem" fontWeight='normal'   ml={'25%'} textAlign='center' w='50%' bgGradient="linear(to-r, teal.300, green.500, yellow.200)" borderRadius='10'>Cursos :</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Atendimento Analítico com Crianças, Teroria e Prática,
-            pelo Instituto Telma Novaes (Desenvolvimento e Pesquisa) </Text>
+            pelo Instituto Telma Novaes (Desenvolvimento e Pesquisa).</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Auriculoterapia Neurofisiológica, pelo
-            Instituto Dra.Lirane Suliano</Text>
+            Instituto Dra.Lirane Suliano.</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Formação Internacional em Hipnóse Clínica,
-            pela Mind Training Academy - Instituto Lucas Novaes </Text>
+            pela Mind Training Academy - Instituto Lucas Novaes.</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Inteligência Emocional, pela
-            Escola Nacional de Adm. Pública (ENAP)</Text>
+            Escola Nacional de Adm. Pública (ENAP).</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Formação Básica para Trabalhadores da Área de Saúde, pela
-            Fundação Osvaldo Cruz (FIOCRUZ)</Text>
+            Fundação Osvaldo Cruz.(FIOCRUZ)</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Introdução a Prática Integrativa e Complementar :
-            Práticas Corporais e Mentais da Medicina Tradicional Chinesa, pelo AVASUS</Text>
+            Práticas Corporais e Mentais da Medicina Tradicional Chinesa, pelo AVASUS.</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Constelação Familiar e Sistêmica,
-            pela Faculdade GAIO</Text>
+            pela Faculdade GAIO.</Text>
           <br />
           <Text fontSize="1rem" fontWeight="normal" >* Terapia Holística, pelo
-            Instituto Saber Consciente </Text>
+            Instituto Saber Consciente.</Text>
+          <br />
+          <Text fontSize="1rem" fontWeight="normal" >* Coaching Integrativo Sistêmico Profissional - (Internacional), pela
+            UDEMY.</Text>
         </Box>
       </Flex>
     </Stack>

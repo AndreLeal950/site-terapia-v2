@@ -6,7 +6,7 @@ import { Drawer, DrawerFooter, DrawerHeader,
 
 
 
-function Sidebar() {
+function Sobre() {
     const { isOpen, onOpen, onClose } = useDisclosure()
   
     const btnRef = React.useRef()
@@ -56,7 +56,7 @@ function Sidebar() {
               Complementares de Saúde.</Text> 
             <br/>
             <Text fontWeight="normal" > Especializada no desenvolvimento do autoconhecimento, autoestima, autogestão, contribuindo
-              com o processo de cura fisica, emocional e mental.</Text> 
+              com o processo de cura física, emocional e mental.</Text> 
             <br/>
             <Text fontWeight="normal" > Proporcionando maior liberdade, autonomia, bem-estar e qualidade de vida
               ao ser humano em todos os sentidos.
@@ -96,7 +96,7 @@ function Sidebar() {
               borderRadius='10'>
               Obejtivo
               </Text><br/>
-            <Text fontWeight="normal" >Atender as necessidades dos clientes, buscando continuamente contrinuir com a promoção
+            <Text fontWeight="normal" >Atender as necessidades dos clientes, buscando continuamente contribuir com a promoção
                 da saúde, autoconhecimento, autoformação, bem-estar e otimização da qualidade de vida.
              </Text>
            
@@ -117,4 +117,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Sobre

@@ -9,7 +9,7 @@ import Profile from './components/Profile';
 import Social from './components/Social';
 import SocialFooter from './components/SocialFooter';
 import Modal from './components/Modal'
-import Sidebar from './components/Sidebar';
+import Sobre from './components/Sobre';
 import Servico from './components/Servico';
 import Galeria from './components/Galeria';
 import Depoimentos from './components/Depoimento';
@@ -63,7 +63,7 @@ function App() {
       <Contato />
       <Profile />
       <Modal />
-      <Sidebar />
+      <Sobre />
       <Servico />
       <Galeria />
       <Depoimentos />

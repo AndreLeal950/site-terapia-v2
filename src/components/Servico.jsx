@@ -63,7 +63,7 @@ function Servico() {
               <ListItem>Reiki</ListItem>
               <ListItem>Auriculoterapia</ListItem>
               <ListItem>Cromoterapia</ListItem>
-              <ListItem>Hipnose Clínica Terapeutica</ListItem>
+              <ListItem>Hipnose Clínica Terapêutica</ListItem>
               <ListItem>Coaching Integrativo Sistêmico Profissional</ListItem>
             </UnorderedList>
              <Text m='0.3rem' fontWeight='semibold' color={isDark ? "gray.200" : "gray.600"}>

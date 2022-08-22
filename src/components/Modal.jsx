@@ -14,7 +14,7 @@ import {
   useMediaQuery
 } from '@chakra-ui/react'
 
-import About from './About'
+import Formacao from './Formacao'
 
 function Sobre() {
     const { isNotSmallerScreen } = useMediaQuery("(min-width:500px)");
@@ -42,7 +42,7 @@ function Sobre() {
                   <ModalHeader fontSize="1.5rem" fontWeight="semibold">Minha Formação:</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>{ <About/>}</Text>
+            <Text>{ <Formacao/>}</Text>
           </ModalBody>
 
           <ModalFooter>

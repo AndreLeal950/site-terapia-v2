@@ -5,7 +5,7 @@ import { Flex, Box, Heading, Text } from '@chakra-ui/layout'
 import { ListItem, UnorderedList } from '@chakra-ui/react'
 
 
-const Profile = () => {
+const Servico = () => {
 
 
     
@@ -44,4 +44,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default Servico
