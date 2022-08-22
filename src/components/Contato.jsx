@@ -16,8 +16,7 @@ const Contato = () => {
     <>
       <Flex w='100%'
         maxWidth={{base: "100vh", md: "130vh", lg: "130vh", xl: "130vh"}}>
-        <Box
-          
+        <Box       
           alignSelf="center"
           w='100%' bg='gray.100'
           borderRadius='10'

@@ -1,7 +1,11 @@
 import React from 'react'
 import { useColorMode } from '@chakra-ui/color-mode'
-import { Button, useMediaQuery, Image } from '@chakra-ui/react';
-import { Stack, Circle, Flex, Box, Text } from '@chakra-ui/layout'
+import { Button, useMediaQuery, Image, VStack } from '@chakra-ui/react';
+import { Flex, Box, Text } from '@chakra-ui/layout'
+
+
+
+
 
 const Header = () => {
     const {colorMode} = useColorMode();
@@ -11,21 +15,17 @@ const Header = () => {
     const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
     
   return (
-    <Stack>
+    <VStack>
              <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "4"}
                   mb={isNotSmallerScreen ? "0" : "0"}
                   ml={isNotSmallerScreen ? "0" : "2"} mr='20px'
                   borderRadius='5%'
                   bgColor='transparent' 
-                   w='190px' h='260px' src= {require('../img/terapeuta.png')}>
-              </Image>
-          <Circle
-            position='absolute'
-            bg='blue.100'
-            opacity='0.1'
-            w='0px'
-            alignSelf='flex-end' />
-          <Flex direction={isNotSmallerScreen ? "row" : "collumn"}
+                  w='190px' h='260px' src= {require('../img/terapeuta.png')}>
+            </Image>
+            
+         
+           <Flex direction={isNotSmallerScreen ? "row" : "collumn"}
                 spacing="50px" p={isNotSmallerScreen ? "32" : "0"}
                 alignSelf="flex-start">
               
@@ -50,7 +50,7 @@ const Header = () => {
               </Box>
 
           </Flex>
-    </Stack>
+    </VStack>
   )
 }
 
