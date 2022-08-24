@@ -1,4 +1,6 @@
 import './App.css';
+
+
 import { VStack, Flex, Heading, Spacer } from '@chakra-ui/layout'
 import { IconButton } from '@chakra-ui/button'
 import { Image, useMediaQuery } from '@chakra-ui/react'
@@ -21,7 +23,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
   const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
-  const { isSmallerScreen } = useMediaQuery("(max-width:599px)");
+  
  
   
   return (
@@ -34,12 +36,8 @@ function App() {
           fontWeight='semibold'
           color='cyan.400'
         >
-          {isSmallerScreen || isNotSmallerScreen ?
-          <Image
-            src={require('../src/img/flor_lotus.png')} w='10rem' alignItems='center' /> :
-          <Image
-            src={require('../src/img/Logo.png')} w='23rem' alignItems='flex-start' />
-          }
+          <Image src={isNotSmallerScreen ? require('../src/img/Logo.png') : require('../src/img/flor_lotus.png') } />
+       
         </Heading>
 
       

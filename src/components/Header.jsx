@@ -14,6 +14,7 @@ const Header = () => {
 
     const { isNotSmallerScreen } = useMediaQuery("(min-width:600px)");
     
+      
   return (
     <VStack>
              <Image alignSelf='center' mt={isNotSmallerScreen ? "0" : "4"}
