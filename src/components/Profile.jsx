@@ -15,7 +15,7 @@ const Servico = () => {
       <Flex w='100%'
         maxWidth={{base: "100vh", md: "130vh", lg: "130vh", xl: "130vh"}}>
         <Box alignSelf="center"
-          w='100%' bg='gray.100'
+          w='100%' bg='gray.200'
           borderRadius='10'
           px="5" py="30">
               <Heading fontWeight='normal' color='green.500'>

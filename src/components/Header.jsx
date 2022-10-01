@@ -37,7 +37,11 @@ const Header = () => {
             fontWeight="bold"
             bgGradient="linear(to-r, teal.300, green.500, yellow.200)"
             bgClip="text" >Silvana Leal</Text> 
-                 <Text color={isDark ? "gray.200" : "gray.600"}>Psicanalista Clínica - Terapeuta Integrativa</Text> 
+                 <Text 
+                 fontSize={'0.9rem'}
+                 color={isDark ? "gray.200" : "gray.600"}>
+                    Psicanalista Clínica - Terapeuta Integrativa
+                 </Text> 
                 
           <Button
             w='15rem'
