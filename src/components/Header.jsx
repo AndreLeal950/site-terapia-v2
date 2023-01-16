@@ -45,7 +45,7 @@ const Header = () => {
                 
           <Button
             w='15rem'
-            mt={2} ml='2rem'
+            mt={2} ml='0.8rem'
             fontSize={'1.2rem'}
             bgGradient="linear(to-r, teal.300, green.500, yellow.200)" onClick={() =>
                     window.open('https://api.whatsapp.com/send?phone=5591992851178')}>
